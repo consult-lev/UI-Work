@@ -1,0 +1,127 @@
+.nopadding {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.bg-danger {
+	padding: 15px;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	background-color: #f5f5f5;
+}
+
+.footer-container {
+	margin: 20px 0;
+	padding: 0 15px;
+}
+
+.datetimepicker {
+	min-width: 150px;
+}
+
+.plan-color-legend {
+	display: inline-block;
+	height: 90%;
+	width: 50px;
+	margin-right: 10px
+}
+
+@media ( min-width : 1500px) {
+	.container {
+		width: 1400px;
+	}
+	.modal-dialog {
+		width: 800px;
+		margin: 30px auto;
+	}
+}
+
+.plan_month_prev {
+	color: red;
+}
+
+.plan_table_type {
+	width: 200px;
+}
+
+.plantable>tbody>tr>td, .plantable>tbody>tr>th, .plantable>tfoot>tr>td,
+	.plantable>tfoot>tr>th, .plantable>thead>tr>td, .plantable>thead>tr>th
+	{
+	padding: 1px;
+}
+
+.plantable {
+	padding: 1px;
+	font-size: 11px;
+	padding: 1px;
+	white-space: nowrap;
+}
+
+.clientorders-table>tbody>tr>td, .clientorders-table>tbody>tr>th,
+	.clientorders-table>tfoot>tr>td, .clientorders-table>tfoot>tr>th,
+	.clientorders-table>thead>tr>td, .clientorders-table>thead>tr>th {
+	padding: 3px;
+}
+
+.clientorders-table {
+	padding: 3px;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.form_field_comment {
+	font-size: 10px;
+	color: red;
+}
+
+.worktable_color {
+	width: 50px;
+}
+
+.worktable_item {
+	width: *;
+}
+
+.worktable_persents {
+	width: 30px;
+}
+
+.worktable_master {
+	width: 150px;
+}
+
+.worktable_workitem {
+	width: 350px;
+}
+
+.worktable_deliveryDate {
+	width: 220px;
+	min-width: 220px;
+}
+
+.worktable_productionDate {
+	width: 220px;
+	min-width: 220px;
+}
+
+.worktable_fact {
+	width: 100px;
+}
+
+.worktable_actions {
+	width: 100px;
+}
+
+.workitem_status {
+	display: inline;
+}
