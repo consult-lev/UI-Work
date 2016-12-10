@@ -4,7 +4,7 @@ Ext.define('APP.store.dictionary.UsersStore', {
 	model : 'APP.model.dictionary.User',
 	proxy : {
 		type : 'ajax',
-		url : '/data/users.json',
+		url : ROOT_URL + '/data/users.json',
 		reader : {
 			type : 'json',
 		}

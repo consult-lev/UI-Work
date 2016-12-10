@@ -4,7 +4,7 @@ Ext.define('APP.store.dictionary.ProductWorkResourcesStore', {
 	fields : [ 'id', 'name', 'active', 'imageUrl' ],
 	proxy : {
 		type : 'ajax',
-		url : '/data/resources.json',
+		url : ROOT_URL + '/data/resources.json',
 		reader : {
 			type : 'json',
 		}
