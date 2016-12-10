@@ -22,11 +22,8 @@
 <body>
 	<script type="text/javascript">
 		Ext.application({
-			name : 'App',
-			required : [ 'APP.view.admin.users.UsersGrid' ],
+			name : 'APP',
 			launch : function() {
-
-				// Init the singleton.  Any tag-based quick tips will start working.
 				Ext.tip.QuickTipManager.init();
 
 				Ext.create('APP.view.admin.users.UsersGrid', {
