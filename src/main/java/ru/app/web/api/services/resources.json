@@ -1,0 +1,13 @@
+[ {
+	"id" : 1,
+	"name" : "Станок1",
+	"active" : true,
+	"imageUrl" : "",
+	"availableList" : []
+}, {
+	"id" : 2,
+	"name" : "Станок2",
+	"active" : true,
+	"imageUrl" : "",
+	"availableList" : []
+} ]
