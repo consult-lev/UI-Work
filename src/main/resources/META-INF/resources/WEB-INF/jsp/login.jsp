@@ -16,7 +16,7 @@
 
     <div class="container">
 
-      <form class="form-signin" action="/login" method="post">
+      <form class="form-signin" action="http://localhost:8081/login" method="post">
         <h2 class="form-signin-heading">Вход</h2>
         <label for="username" class="sr-only">Имя пользователя</label>
         <input  type="text" id="username" name="username" class="form-control" placeholder="Имя пользователя" required autofocus>
