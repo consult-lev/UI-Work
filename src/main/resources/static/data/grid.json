@@ -1,0 +1,46 @@
+{"list":
+	[
+	 	{	"id":545,"number":"0.000000000","object":"Название1-1","legalNumber":"Название1-2",
+	 		"specificationNumber":"Название1-3","manager":"Test123",
+	 		"managerComments":"Комментарий1","contractDate":null,"planDate":null,
+	 		"adminComments":"Комментарий2","status":"Ожидает","approveList":null,
+	 		"approveListDate":null,"isArchived":false,"lastModify":"1481788771136",
+	 		"createdDate":1481788580512,
+	 		"list":[
+	 		        {
+	 		        	"id":673,"clientOrderId":545,"designExecutor":"2222","designProjectNum":null,
+	 		        	"number":"0.000000000-1-16","status":"Ожидает","comments":"3333","plannedDate":null,
+	 		        	"persent":0,"work":2,"count":1,"width":1.00,"typeId":0,"clientOrderInfo":null,
+	 		        	"productTypeInfo":{"id":545,"name":"Тип1","work":2,"width":1.00,"classTypeId":1,"classTypeName":"1. Одностороннего всасывания"},
+	 		        	"productClassComplectInfo":{"name":"Изделие полностью","sparePartId":-1,"id":0},
+	 		        	"productOrderDesignInfo":{"id":385,"productOrderId":673,"productTypeProjectId":null,"productTypeId":545,"productTypeName":"Тип1","productTypeProjectName":null,"hasApproveList":false}
+		 			},
+					{
+						"id":674,"clientOrderId":545,"designExecutor":"4444","designProjectNum":null,"number":"0.000000000-2-16","status":"Ожидает",
+						"comments":"5555","plannedDate":null,"persent":0,"work":3,"count":1,"width":2.00,"typeId":0,"clientOrderInfo":null,
+						"productTypeInfo":{"id":546,"name":"Тип2","work":3,"width":2.00,"classTypeId":2,"classTypeName":"2. Двустороннего всасывания"},
+						"productClassComplectInfo":{"name":"Изделие полностью","sparePartId":-1,"id":0},
+						"productOrderDesignInfo":{"id":386,"productOrderId":674,"productTypeProjectId":null,"productTypeId":546,"productTypeName":"Тип2","productTypeProjectName":null,"hasApproveList":false}
+					}
+	 			]
+	 	},
+	 	{
+	 		"id":546,"number":"0.000000001","object":"Название2-1","legalNumber":"Название2-2","specificationNumber":"Название2-3","manager":"Test123",
+	 		"managerComments":"Коммент","contractDate":null,"planDate":null,"adminComments":"Коммент","status":"Ожидает","approveList":null,
+	 		"approveListDate":null,"isArchived":false,"lastModify":"1481788936393","createdDate":1481788936393,
+			"list":[]
+		},
+		{
+			"id":547,"number":"0.000000003","object":"Название3-1","legalNumber":"Название3-2","specificationNumber":"Название3-3","manager":"Test123","managerComments":"Комментарий","contractDate":null,"planDate":null,"adminComments":"Комментарий","status":"Ожидает","approveList":null,"approveListDate":null,"isArchived":false,"lastModify":"1481788980197","createdDate":1481788980197,
+			"list":[
+			        {
+			        	"id":675,"clientOrderId":547,"designExecutor":"123321","designProjectNum":null,"number":"0.000000003-1-16","status":"Ожидает",
+			        	"comments":"2222","plannedDate":null,"persent":0,"work":3,"count":1,"width":2.00,"typeId":0,"clientOrderInfo":null,
+			        	"productTypeInfo":{"id":546,"name":"Тип2","work":3,"width":2.00,"classTypeId":2,"classTypeName":"2. Двустороннего всасывания"},
+			        	"productClassComplectInfo":{"name":"Изделие полностью","sparePartId":-1,"id":0},
+			        	"productOrderDesignInfo":{"id":387,"productOrderId":675,"productTypeProjectId":null,"productTypeId":546,"productTypeName":"Тип2","productTypeProjectName":null,"hasApproveList":false}
+			        }
+			       ]
+		}
+	]
+}
