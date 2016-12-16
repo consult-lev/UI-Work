@@ -7,7 +7,9 @@ Ext.define('APP.store.dictionary.OrdersStore', {
         type : 'ajax',
         url : ROOT_URL + '/data/grid.json',
         reader : {
-            type : 'json'
+            type : 'json',
+            implicitIncludes: true,
+            rootProperty: 'list'
         }
     },
     autoLoad : true

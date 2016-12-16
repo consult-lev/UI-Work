@@ -8,6 +8,18 @@ Ext.define('APP.model.dictionary.Order', {
         {
             name : 'number',
             type : 'string'
+        },
+        {
+            name : 'object',
+            type : 'string'
+        },
+        {
+            name : 'status',
+            type : 'string'
+        },
+        {
+            name : 'manager',
+            type : 'string'
         }
     ]
 });

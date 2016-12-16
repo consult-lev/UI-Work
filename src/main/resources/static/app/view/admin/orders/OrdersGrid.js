@@ -1,33 +1,57 @@
 Ext.define('APP.view.admin.orders.OrdersGrid', {
     extend : 'Ext.grid.Panel',
     requires : [
-        'APP.store.dictionary.UsersStore',
+        'APP.store.dictionary.OrdersStore',
         'APP.view.admin.users.UsersGridController'
     ],
-//	controller : 'UsersGridController',
+
     width : "*",
     height : 400,
     title : 'Заказы',
-    plugins : 'gridfilters',
     store : {
         type : 'OrdersStore'
     },
-    //tools : [
-    //    {
-    //        type : 'refresh',
-    //        tooltip : 'Обновить',
-    //        handler : 'onRefresh'
-    //    },
-    //    {
-    //        type : 'plus',
-    //        handler : 'onAddUser',
-    //        tooltip : 'Добавить пользователя'
-    //    }
-    //],
+
     viewConfig : {
         enableTextSelection : true
     },
 
+    plugins: [
+        {
+            ptype: "gridfilters",
+        },
+        {
+            ptype: 'rowwidget',
+            widget: {
+                xtype: 'grid',
+                bind: {
+                    store: '{record.list}',
+                    title: 'Orders for {record.number}'
+                }
+            },
+            columns: [
+                {
+                    xtype: 'rownumberer',
+                    text: '#'
+                },
+                {
+                    text: '№ Заказа',
+                    flex: 1,
+                    dataIndex: 'number'
+                },
+                {
+                    text: 'Статус',
+                    flex: 1,
+                    dataIndex: 'status'
+                }
+            ],
+            listeners: {
+                expandbody: function(node, record) {
+                    console.log(record);
+                }
+            }
+        }
+    ],
 
     columns: [
         {
@@ -38,40 +62,21 @@ Ext.define('APP.view.admin.orders.OrdersGrid', {
             text: '№ Заказа',
             flex: 1,
             dataIndex: 'number'
+        },
+        {
+            text: 'Статус',
+            flex: 1,
+            dataIndex: 'status'
+        },
+        {
+            text: 'Объект',
+            flex: 1,
+            dataIndex: 'object'
+        },
+        {
+            text: 'Исполнитель',
+            flex: 1,
+            dataIndex: 'manager'
         }
-    ],
-
-    //columns : [ {
-    //    xtype : 'rownumberer'
-    //}, {
-    //    text : 'Имя',
-    //    flex : 1,
-    //    width : "*",
-    //    hideable : false,
-    //    dataIndex : 'name',
-    //    filter : {
-    //        type : 'string',
-    //    }
-    //}, {
-    //    xtype : 'actioncolumn',
-    //    width : 25,
-    //    hideable : false,
-    //    sortable : false,
-    //    items : [ {
-    //        icon : 'resources/icons/information.png',
-    //        tooltip : 'Информация',
-    //        handler : 'onInfo'
-    //    } ]
-    //}, {
-    //    text : 'Логин',
-    //    width : 100,
-    //    dataIndex : 'login'
-    //
-    //}, {
-    //    text : 'Роли',
-    //    width : 150,
-    //    dataIndex : 'roles'
-    //
-    //} ],
-
+    ]
 });
