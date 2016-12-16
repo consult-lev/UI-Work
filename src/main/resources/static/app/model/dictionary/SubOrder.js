@@ -1,6 +1,6 @@
-Ext.define('APP.model.dictionary.Order', {
+Ext.define('APP.model.dictionary.SubOrder', {
     extend : 'Ext.data.Model',
-    entityName: 'Order',
+    entityName: 'SubOrder',
     fields : [
         {
             name : 'id',
@@ -11,7 +11,7 @@ Ext.define('APP.model.dictionary.Order', {
             type : 'string'
         },
         {
-            name : 'object',
+            name : 'comments',
             type : 'string'
         },
         {
@@ -19,8 +19,12 @@ Ext.define('APP.model.dictionary.Order', {
             type : 'string'
         },
         {
-            name : 'manager',
-            type : 'string'
+            name : 'clientOrderId',
+            reference: {
+                type: 'Order',
+                role: 'Order'
+            },
+            type : 'int'
         }
-    ],
+    ]
 });

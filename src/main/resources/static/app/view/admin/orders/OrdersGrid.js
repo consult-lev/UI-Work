@@ -2,6 +2,8 @@ Ext.define('APP.view.admin.orders.OrdersGrid', {
     extend : 'Ext.grid.Panel',
     requires : [
         'APP.store.dictionary.OrdersStore',
+        'APP.model.dictionary.Order',
+        'APP.model.dictionary.SubOrder',
         'APP.view.admin.users.UsersGridController'
     ],
 
@@ -25,30 +27,25 @@ Ext.define('APP.view.admin.orders.OrdersGrid', {
             widget: {
                 xtype: 'grid',
                 bind: {
-                    store: '{record.list}',
-                    title: 'Orders for {record.number}'
-                }
-            },
-            columns: [
-                {
-                    xtype: 'rownumberer',
-                    text: '#'
+                    store: '{record.subOrders}',
                 },
-                {
-                    text: '№ Заказа',
-                    flex: 1,
-                    dataIndex: 'number'
-                },
-                {
-                    text: 'Статус',
-                    flex: 1,
-                    dataIndex: 'status'
-                }
-            ],
-            listeners: {
-                expandbody: function(node, record) {
-                    console.log(record);
-                }
+                emptyText: 'Подзаказов нет',
+                columns: [
+                    {
+                        xtype: 'rownumberer',
+                        text: '#'
+                    },
+                    {
+                        text: '№ Заказа',
+                        flex: 1,
+                        dataIndex: 'number'
+                    },
+                    {
+                        text: 'Статус',
+                        flex: 1,
+                        dataIndex: 'status'
+                    }
+                ]
             }
         }
     ],
@@ -78,5 +75,12 @@ Ext.define('APP.view.admin.orders.OrdersGrid', {
             flex: 1,
             dataIndex: 'manager'
         }
-    ]
+    ],
+
+    listeners: {
+        select: function(grid, record) {
+            console.log(record);
+            console.log(record.subOrders());
+        }
+    }
 });

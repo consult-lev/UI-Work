@@ -6,7 +6,7 @@
 	 		"adminComments":"Комментарий2","status":"Ожидает","approveList":null,
 	 		"approveListDate":null,"isArchived":false,"lastModify":"1481788771136",
 	 		"createdDate":1481788580512,
-	 		"list":[
+	 		"subOrders":[
 	 		        {
 	 		        	"id":673,"clientOrderId":545,"designExecutor":"2222","designProjectNum":null,
 	 		        	"number":"0.000000000-1-16","status":"Ожидает","comments":"3333","plannedDate":null,
@@ -28,11 +28,11 @@
 	 		"id":546,"number":"0.000000001","object":"Название2-1","legalNumber":"Название2-2","specificationNumber":"Название2-3","manager":"Test123",
 	 		"managerComments":"Коммент","contractDate":null,"planDate":null,"adminComments":"Коммент","status":"Ожидает","approveList":null,
 	 		"approveListDate":null,"isArchived":false,"lastModify":"1481788936393","createdDate":1481788936393,
-			"list":[]
+			"subOrders":[]
 		},
 		{
 			"id":547,"number":"0.000000003","object":"Название3-1","legalNumber":"Название3-2","specificationNumber":"Название3-3","manager":"Test123","managerComments":"Комментарий","contractDate":null,"planDate":null,"adminComments":"Комментарий","status":"Ожидает","approveList":null,"approveListDate":null,"isArchived":false,"lastModify":"1481788980197","createdDate":1481788980197,
-			"list":[
+			"subOrders":[
 			        {
 			        	"id":675,"clientOrderId":547,"designExecutor":"123321","designProjectNum":null,"number":"0.000000003-1-16","status":"Ожидает",
 			        	"comments":"2222","plannedDate":null,"persent":0,"work":3,"count":1,"width":2.00,"typeId":0,"clientOrderInfo":null,
