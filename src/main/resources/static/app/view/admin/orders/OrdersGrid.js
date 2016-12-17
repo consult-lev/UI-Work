@@ -20,32 +20,47 @@ Ext.define('APP.view.admin.orders.OrdersGrid', {
 
     plugins: [
         {
-            ptype: "gridfilters",
+            ptype: "gridfilters"
         },
         {
             ptype: 'rowwidget',
             widget: {
-                xtype: 'grid',
+                xtype: 'container',
+                layout: 'hbox',
                 bind: {
-                    store: '{record.subOrders}',
+                    foo: '{record}'
                 },
-                emptyText: 'Подзаказов нет',
-                columns: [
+                items: [
                     {
-                        xtype: 'rownumberer',
-                        text: '#'
+                        xtype: 'container',
+                        flex: 1
                     },
                     {
-                        text: '№ Заказа',
-                        flex: 1,
-                        dataIndex: 'number'
-                    },
-                    {
-                        text: 'Статус',
-                        flex: 1,
-                        dataIndex: 'status'
+                        xtype: 'grid',
+                        width: 500,
+                        bind: {
+                            store: '{record.subOrders}'
+                        },
+                        emptyText: 'Подзаказов нет',
+                        columns: [
+                            {
+                                xtype: 'rownumberer',
+                                text: '#'
+                            },
+                            {
+                                text: '№ Заказа',
+                                flex: 1,
+                                dataIndex: 'number'
+                            },
+                            {
+                                text: 'Статус',
+                                flex: 1,
+                                dataIndex: 'status'
+                            }
+                        ]
                     }
-                ]
+                ],
+                setFoo: Ext.emptyFn // костыль
             }
         }
     ],
@@ -72,7 +87,7 @@ Ext.define('APP.view.admin.orders.OrdersGrid', {
         },
         {
             text: 'Исполнитель',
-            flex: 1,
+            width: 500,
             dataIndex: 'manager'
         }
     ],
