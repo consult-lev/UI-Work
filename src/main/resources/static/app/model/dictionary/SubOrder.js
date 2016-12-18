@@ -19,6 +19,26 @@ Ext.define('APP.model.dictionary.SubOrder', {
             type : 'string'
         },
         {
+            name : 'count',
+            type : 'int'
+        },
+        {
+            name : 'designProjectNum',
+            type : 'string'
+        },
+        {
+            name : 'designExecutor',
+            type : 'string'
+        },
+        {
+            name : 'productTypeInfo',
+            type : 'auto'
+        },
+        {
+            name : 'productOrderDesignInfo',
+            type : 'auto'
+        },
+        {
             name : 'clientOrderId',
             reference: {
                 type: 'Order',
